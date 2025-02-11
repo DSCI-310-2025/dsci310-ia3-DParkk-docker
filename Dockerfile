@@ -12,3 +12,7 @@ RUN Rscript -e "remotes::install_version('cowsay', version='1.0.0', repos='https
 
 # Add glue package (To trigger rebuild)
 RUN Rscript -e "install.packages('glue', repos = 'https://cloud.r-project.org')"
+
+# Add stringr package (To trigger rebuild)
+RUN Rscript -e "install.packages('stringr', repos = 'https://cloud.r-project.org')"
+
